@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device--width, initial-scale=1.0">
     <title>Estrategia y Sostenibilidad Empresarial</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -12,8 +12,10 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8f7f4;
-            color: #3f3c3a;
+            /* Actualizado: Fondo principal más cálido */
+            background-color: #FBFBFB;
+            /* Actualizado: Color de texto principal más suave */
+            color: #3E3E3C;
             scroll-behavior: smooth;
         }
         .nav-link {
@@ -21,16 +23,19 @@
             border-left: 3px solid transparent;
         }
         .nav-link.active {
-            background-color: #edeae5;
-            color: #a16207;
-            border-left-color: #a16207;
+            /* Actualizado: Colores de enlace activo (verde y beige) */
+            background-color: #F4F2EE;
+            color: #3A5B4F;
+            border-left-color: #3A5B4F;
         }
         .nav-link:hover {
-            background-color: #edeae5;
+            /* Actualizado: Hover de enlace */
+            background-color: #F4F2EE;
         }
         .hero-section {
             min-height: 100vh;
-            background-image: linear-gradient(135deg, #118AB2 0%, #073B4C 100%);
+            /* Actualizado: Gradiente de portada (verde sostenible) */
+            background-image: linear-gradient(135deg, #3A5B4F 0%, #2a4037 100%);
         }
         .hero-button {
              transition: transform 0.3s ease;
@@ -61,12 +66,14 @@
 
     <!-- SECCIÓN DE CARÁTULA (PORTADA) -->
     <section id="portada" class="hero-section flex items-center justify-center p-8 text-white">
-        <div class="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+        <!-- Actualizado: Ancho máximo reducido para mayor comodidad en escritorio -->
+        <div class="container max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10">
             
             <!-- Bloque Izquierdo: Títulos e Integrantes -->
             <div class="space-y-8">
                 <p class="text-xl font-light opacity-80">COMPLEMENTO ESPECIALIZADO IX CICLO</p>
-                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight">
+                <!-- Actualizado: Tamaño de fuente ajustado para mejor responsividad -->
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">
                     Estrategia y Sostenibilidad Empresarial: Claves para no Quebrar un Negocio
                 </h1>
                 
@@ -89,7 +96,8 @@
                     </div>
                 </div>
 
-                <a href="#content-start" class="inline-flex items-center space-x-3 bg-[#FFD166] text-[#073B4C] font-black text-lg py-4 px-8 rounded-full shadow-xl hero-button mt-10">
+                <!-- Actualizado: Botón con nueva paleta -->
+                <a href="#content-start" class="inline-flex items-center space-x-3 bg-[#FBFBFB] text-[#3A5B4F] font-black text-lg py-4 px-8 rounded-full shadow-xl hero-button mt-10">
                     <span>IR AL INFORME</span>
                     <span class="text-2xl">→</span>
                 </a>
@@ -97,9 +105,11 @@
 
             <!-- Bloque Derecho: Icono del Tema -->
             <div class="flex justify-center">
-                 <div class="w-full max-w-md p-12 bg-white/20 rounded-[3rem] backdrop-blur-sm shadow-2xl text-center border-4 border-white/30">
+                 <!-- Actualizado: Padding reducido para un look más ajustado -->
+                 <div class="w-full max-w-md p-10 bg-white/20 rounded-[3rem] backdrop-blur-sm shadow-2xl text-center border-4 border-white/30">
                     <p class="text-9xl mb-4 transform -rotate-6">💡</p>
-                    <p class="text-4xl font-extrabold text-[#FFD166]">GRUPO 05</p>
+                    <!-- Actualizado: Color de texto del icono -->
+                    <p class="text-4xl font-extrabold text-[#FBFBFB]">GRUPO 05</p>
                     <p class="text-xl font-medium mt-2">Análisis Estratégico</p>
                 </div>
             </div>
@@ -108,30 +118,37 @@
     
     <!-- CONTENIDO PRINCIPAL (DASHBOARD) -->
     <div id="content-start" class="flex flex-col md:flex-row min-h-screen">
-        <aside class="w-full md:w-64 bg-[#f1efe9] border-r border-gray-200/80 sticky top-0 self-start">
+        <!-- Actualizado: Fondo y borde de barra lateral -->
+        <aside class="w-full md:w-64 bg-[#F4F2EE] border-r border-gray-300/30 sticky top-0 self-start">
             <div class="px-6 py-4">
-                <h1 class="text-xl font-bold text-gray-800">Menú del Informe</h1>
-                <p class="text-sm text-gray-500">Navega por las secciones</p>
+                <!-- Actualizado: Colores de texto de barra lateral -->
+                <h1 class="text-xl font-bold text-[#3A5B4F]">Menú del Informe</h1>
+                <p class="text-sm text-[#7A7A79]">Navega por las secciones</p>
             </div>
             <nav id="main-nav" class="mt-4 flex flex-row md:flex-col overflow-x-auto md:overflow-x-hidden">
-                <a href="#seccion1" class="nav-link active font-semibold text-sm flex-shrink-0 block py-3 px-6 text-gray-700">1. Rendimiento Sostenible</a>
-                <a href="#seccion2" class="nav-link font-semibold text-sm flex-shrink-0 block py-3 px-6 text-gray-700">2. Claves Operacionales</a>
-                <a href="#seccion3" class="nav-link font-semibold text-sm flex-shrink-0 block py-3 px-6 text-gray-700">3. Contexto Peruano</a>
-                <a href="#seccion4" class="nav-link font-semibold text-sm flex-shrink-0 block py-3 px-6 text-gray-700">4. Propuesta Estratégica</a>
-                <a href="#seccion5" class="nav-link font-semibold text-sm flex-shrink-0 block py-3 px-6 text-gray-700">5. Riesgo Sistémico</a>
-                <a href="#seccion6" class="nav-link font-semibold text-sm flex-shrink-0 block py-3 px-6 text-gray-700">6. Conclusiones</a>
+                <!-- Actualizado: Color de texto de enlaces -->
+                <a href="#seccion1" class="nav-link active font-semibold text-sm flex-shrink-0 block py-3 px-6 text-[#3E3E3C]">1. Rendimiento Sostenible</a>
+                <a href="#seccion2" class="nav-link font-semibold text-sm flex-shrink-0 block py-3 px-6 text-[#3E3E3C]">2. Claves Operacionales</a>
+                <a href="#seccion3" class="nav-link font-semibold text-sm flex-shrink-0 block py-3 px-6 text-[#3E3E3C]">3. Contexto Peruano</a>
+                <a href="#seccion4" class="nav-link font-semibold text-sm flex-shrink-0 block py-3 px-6 text-[#3E3E3C]">4. Propuesta Estratégica</a>
+                <a href="#seccion5" class="nav-link font-semibold text-sm flex-shrink-0 block py-3 px-6 text-[#3E3E3C]">5. Riesgo Sistémico</a>
+                <a href="#seccion6" class="nav-link font-semibold text-sm flex-shrink-0 block py-3 px-6 text-[#3E3E3C]">6. Conclusiones</a>
             </nav>
         </aside>
 
-        <main class="flex-1 p-4 sm:p-6 md:p-10">
+        <!-- Actualizado: Añadido max-w-5xl y mx-auto para centrar y limitar el ancho del contenido principal en escritorio -->
+        <main class="flex-1 p-4 sm:p-6 md:p-10 max-w-5xl mx-auto w-full">
             
             <section id="seccion1" class="content-section space-y-8">
                 <header>
-                    <h2 class="text-3xl font-bold text-gray-800">I. La Estrategia como Única Garantía de Rendimiento Sostenible</h2>
+                    <!-- Actualizado: Color de encabezado de sección -->
+                    <h2 class="text-3xl font-bold text-[#3A5B4F]">I. La Estrategia como Única Garantía de Rendimiento Sostenible</h2>
                 </header>
-                <div class="space-y-6 text-gray-700">
+                <!-- Actualizado: Color de texto de sección -->
+                <div class="space-y-6 text-[#3E3E3C]">
                     <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">1.1. Estrategia = Ventaja Competitiva Sostenible</h3>
+                        <!-- Actualizado: Color de sub-encabezado -->
+                        <h3 class="text-xl font-semibold mb-2 text-[#3A5B4F]">1.1. Estrategia = Ventaja Competitiva Sostenible</h3>
                         <p>Salazar define la estrategia de manera estricta: es la ventaja competitiva que permite a una empresa obtener un rendimiento superior y mantenerse en el tiempo.</p>
                         <ul class="mt-2 pl-5 space-y-2 sub-list">
                             <li>La planificación, los objetivos y los procesos no son estrategia, sino vehículos para alcanzarla.</li>
@@ -140,12 +157,14 @@
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">1.2. Estrategia y Stakeholders: Creación de Valor Compartido</h3>
+                        <!-- Actualizado: Color de subtítulo corregido para consistencia -->
+                        <h3 class="text-xl font-semibold mb-2 text-[#3A5B4F]">1.2. Estrategia y Stakeholders: Creación de Valor Compartido</h3>
                         <p>La ventaja competitiva sostenible no solo beneficia a los accionistas. Su impacto se extiende a trabajadores, clientes, proveedores y la sociedad, generando un círculo virtuoso.</p>
                         <p class="mt-2">Si la estrategia falla, todos los actores relacionados con la empresa se ven afectados. La sostenibilidad depende, por lo tanto, de una cohesión social estratégica.</p>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">1.3. Estrategia, Planeamiento y Modelo de Negocio: Tres Conceptos Diferentes</h3>
+                        <!-- Actualizado: Color de subtítulo corregido para consistencia -->
+                        <h3 class="text-xl font-semibold mb-2 text-[#3A5B4F]">1.3. Estrategia, Planeamiento y Modelo de Negocio: Tres Conceptos Diferentes</h3>
                         <ul class="mt-2 pl-5 space-y-2 sub-list">
                             <li><b>Estrategia:</b> el “qué” — la ventaja competitiva.</li>
                             <li><b>Planeamiento:</b> el “cómo” — el proceso que conduce a esa ventaja.</li>
@@ -153,21 +172,22 @@
                         </ul>
                         <p class="mt-2 italic">Un modelo de negocio eficaz resuelve de forma simple un problema que nadie estaba resolviendo bien.</p>
                     </div>
-                    <div class="mt-6 bg-white p-6 rounded-lg shadow-sm border border-gray-200/80">
-                        <h4 class="font-bold text-center text-gray-800 mb-4">Relación de Conceptos Clave</h4>
+                    <!-- Actualizado: Colores de tarjeta y diagrama -->
+                    <div class="mt-6 bg-[#F4F2EE] p-6 rounded-lg shadow-sm border border-gray-300/30">
+                        <h4 class="font-bold text-center text-[#3A5B4F] mb-4">Relación de Conceptos Clave</h4>
                         <div class="flex flex-col md:flex-row justify-around items-center text-center space-y-4 md:space-y-0">
                             <div class="flex flex-col items-center">
-                                <div class="w-24 h-24 bg-blue-100 border-2 border-blue-300 rounded-full flex items-center justify-center p-2 font-bold text-blue-800">Estrategia (Qué)</div>
+                                <div class="w-24 h-24 bg-[#EAF0E8] border-2 border-[#3A5B4F] rounded-full flex items-center justify-center p-2 font-bold text-[#3A5B4F]">Estrategia (Qué)</div>
                                 <p class="text-xs mt-1">Ventaja Competitiva</p>
                             </div>
                             <div class="text-2xl font-light text-gray-400">→</div>
                             <div class="flex flex-col items-center">
-                                <div class="w-24 h-24 bg-green-100 border-2 border-green-300 rounded-lg flex items-center justify-center p-2 font-bold text-green-800">Planeamiento (Cómo)</div>
+                                <div class="w-24 h-24 bg-[#F4F2EE] border-2 border-[#9DB193] rounded-lg flex items-center justify-center p-2 font-bold text-[#3E3E3C]">Planeamiento (Cómo)</div>
                                 <p class="text-xs mt-1">Proceso y Acciones</p>
                             </div>
                             <div class="text-2xl font-light text-gray-400">→</div>
                             <div class="flex flex-col items-center">
-                                <div class="w-24 h-24 bg-yellow-100 border-2 border-yellow-300 rounded-md flex items-center justify-center p-2 font-bold text-yellow-800">Modelo (Estructura)</div>
+                                <div class="w-24 h-24 bg-[#F4F2EE] border-2 border-[#7A7A79] rounded-md flex items-center justify-center p-2 font-bold text-[#3E3E3C]">Modelo (Estructura)</div>
                                 <p class="text-xs mt-1">Entrega de Valor</p>
                             </div>
                         </div>
@@ -177,11 +197,14 @@
 
             <section id="seccion2" class="content-section hidden space-y-8">
                 <header>
-                    <h2 class="text-3xl font-bold text-gray-800">II. Claves Operacionales Internas</h2>
+                    <!-- Actualizado: Color de encabezado -->
+                    <h2 class="text-3xl font-bold text-[#3A5B4F]">II. Claves Operacionales Internas</h2>
                 </header>
-                <div class="space-y-6 text-gray-700">
+                <!-- Actualizado: Color de texto -->
+                <div class="space-y-6 text-[#3E3E3C]">
                     <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">2.1. El Paradigma de la Coherencia Estratégica</h3>
+                        <!-- Actualizado: Color de sub-encabezado -->
+                        <h3 class="text-xl font-semibold mb-2 text-[#3A5B4F]">2.1. El Paradigma de la Coherencia Estratégica</h3>
                         <p>Usando una analogía deportiva, Salazar explica que todas las estrategias pueden ser válidas (ataque, defensa o equilibrio), pero solo si se respeta la coherencia entre:</p>
                         <ul class="mt-2 pl-5 space-y-2 sub-list">
                            <li>Estrategia elegida</li>
@@ -189,20 +212,22 @@
                            <li>Acciones ejecutadas</li>
                         </ul>
                         <p class="mt-2">Un plan ambicioso con recursos limitados es una estrategia destinada a fracasar. La incoherencia estratégica es, en la práctica, una quiebra lenta.</p>
-                         <div class="mt-6 bg-white p-6 rounded-lg shadow-sm border border-gray-200/80">
-                            <h4 class="font-bold text-center text-gray-800 mb-4">El Triángulo de la Coherencia</h4>
+                         <!-- Actualizado: Colores de tarjeta y diagrama -->
+                         <div class="mt-6 bg-[#F4F2EE] p-6 rounded-lg shadow-sm border border-gray-300/30">
+                            <h4 class="font-bold text-center text-[#3A5B4F] mb-4">El Triángulo de la Coherencia</h4>
                             <div class="relative w-full max-w-xs mx-auto h-40 flex items-center justify-center">
-                                <div class="absolute top-0 left-1/2 -translate-x-1/2 bg-red-100 text-red-800 font-semibold px-3 py-1 rounded-md text-sm">Estrategia</div>
-                                <div class="absolute bottom-0 left-0 bg-red-100 text-red-800 font-semibold px-3 py-1 rounded-md text-sm">Recursos</div>
-                                <div class="absolute bottom-0 right-0 bg-red-100 text-red-800 font-semibold px-3 py-1 rounded-md text-sm">Acciones</div>
+                                <div class="absolute top-0 left-1/2 -translate-x-1/2 bg-[#EAF0E8] text-[#3A5B4F] font-semibold px-3 py-1 rounded-md text-sm">Estrategia</div>
+                                <div class="absolute bottom-0 left-0 bg-[#EAF0E8] text-[#3A5B4F] font-semibold px-3 py-1 rounded-md text-sm">Recursos</div>
+                                <div class="absolute bottom-0 right-0 bg-[#EAF0E8] text-[#3A5B4F] font-semibold px-3 py-1 rounded-md text-sm">Acciones</div>
                                 <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                                  <path d="M50 15 L15 85 L85 85 Z" stroke="#fecaca" stroke-width="2" fill="none"/>
+                                  <path d="M50 15 L15 85 L85 85 Z" stroke="#9DB193" stroke-width="2" fill="none"/>
                                 </svg>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">2.2. La Estrategia como Proceso Vivo</h3>
+                        <!-- Actualizado: Color de sub-encabezado -->
+                        <h3 class="text-xl font-semibold mb-2 text-[#3A5B4F]">2.2. La Estrategia como Proceso Vivo</h3>
                         <p>La estrategia no es un documento estático. Requiere revisiones continuas para asegurar que las decisiones y acciones estén alineadas con los objetivos estratégicos.</p>
                         <ul class="mt-2 pl-5 space-y-2 sub-list">
                            <li><b>Ajustar hacia adelante:</b> incorporar nueva información.</li>
@@ -214,22 +239,27 @@
             
             <section id="seccion3" class="content-section hidden space-y-8">
                 <header>
-                    <h2 class="text-3xl font-bold text-gray-800">III. Diagnóstico del Contexto Peruano</h2>
+                    <!-- Actualizado: Color de encabezado -->
+                    <h2 class="text-3xl font-bold text-[#3A5B4F]">III. Diagnóstico del Contexto Peruano</h2>
                 </header>
-                <div class="space-y-6 text-gray-700">
+                <!-- Actualizado: Color de texto -->
+                <div class="space-y-6 text-[#3E3E3C]">
                     <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">3.1. El Ciclo Roto de las MIPYMES</h3>
+                        <!-- Actualizado: Color de sub-encabezado -->
+                        <h3 class="text-xl font-semibold mb-2 text-[#3A5B4F]">3.1. El Ciclo Roto de las MIPYMES</h3>
                         <p>La progresión natural de micro a pequeña, mediana y gran empresa está rota en el Perú.</p>
                         <p class="mt-2">Según un estudio de la Superintendencia Nacional de Aduanas y de Administración Tributaria, solo el 3.9 % de los microempresarios logra escalar en 10 años. El 96.1 % permanece estancado, reflejando un fracaso estructural en la creación de valor.</p>
-                         <div class="mt-6 bg-white p-6 rounded-lg shadow-sm border border-gray-200/80">
-                            <h4 class="font-bold text-center text-gray-800 mb-4">Destino de las MIPYMES en 10 Años</h4>
+                         <!-- Actualizado: Colores de tarjeta -->
+                         <div class="mt-6 bg-[#F4F2EE] p-6 rounded-lg shadow-sm border border-gray-300/30">
+                            <h4 class="font-bold text-center text-[#3A5B4F] mb-4">Destino de las MIPYMES en 10 Años</h4>
                             <div class="chart-container h-64">
                                 <canvas id="mipymesChart"></canvas>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">3.2. Informalidad y Costos de Formalización</h3>
+                        <!-- Actualizado: Color de sub-encabezado -->
+                        <h3 class="text-xl font-semibold mb-2 text-[#3A5B4F]">3.2. Informalidad y Costos de Formalización</h3>
                         <p>El estancamiento está relacionado con:</p>
                         <ul class="mt-2 pl-5 space-y-2 sub-list">
                            <li>Dependencia de la informalidad para reducir costos laborales y tributarios.</li>
@@ -242,11 +272,14 @@
             
             <section id="seccion4" class="content-section hidden space-y-8">
                 <header>
-                    <h2 class="text-3xl font-bold text-gray-800">IV. Propuesta Estratégica para Fortalecer la Microempresa</h2>
+                    <!-- Actualizado: Color de encabezado -->
+                    <h2 class="text-3xl font-bold text-[#3A5B4F]">IV. Propuesta Estratégica para Fortalecer la Microempresa</h2>
                 </header>
-                <div class="space-y-6 text-gray-700">
+                <!-- Actualizado: Color de texto -->
+                <div class="space-y-6 text-[#3E3E3C]">
                      <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">4.1. Liquidez como Palanca Estratégica</h3>
+                        <!-- Actualizado: Color de sub-encabezado -->
+                        <h3 class="text-xl font-semibold mb-2 text-[#3A5B4F]">4.1. Liquidez como Palanca Estratégica</h3>
                         <p>Para romper la trampa financiera del “gota a gota”, Salazar propone una política pública basada en:</p>
                         <ul class="mt-2 pl-5 space-y-2 sub-list">
                            <li><b>Inclusión digital:</b> apertura de cuentas DNI y billeteras electrónicas.</li>
@@ -254,25 +287,26 @@
                            <li><b>Tasas de interés bajas:</b> desplazar a prestamistas informales.</li>
                         </ul>
                         <p class="mt-2 font-semibold">La idea central: la formalización no debe ser represiva, sino un beneficio estratégico que impulse el crecimiento.</p>
-                         <div class="mt-6 bg-white p-6 rounded-lg shadow-sm border border-gray-200/80">
-                            <h4 class="font-bold text-center text-gray-800 mb-4">Componentes de la Palanca de Liquidez</h4>
+                         <!-- Actualizado: Colores de tarjeta y diagrama -->
+                         <div class="mt-6 bg-[#F4F2EE] p-6 rounded-lg shadow-sm border border-gray-300/30">
+                            <h4 class="font-bold text-center text-[#3A5B4F] mb-4">Componentes de la Palanca de Liquidez</h4>
                             <div class="flex flex-col md:flex-row justify-around items-center text-center space-y-6 md:space-y-0">
                                 <div class="flex flex-col items-center">
                                     <div class="text-4xl mb-2">💳</div>
                                     <p class="font-semibold">Inclusión Digital</p>
-                                    <p class="text-xs text-gray-500">Cuentas DNI</p>
+                                    <p class="text-xs text-[#7A7A79]">Cuentas DNI</p>
                                 </div>
                                 <div class="text-2xl font-light text-gray-400">+</div>
                                 <div class="flex flex-col items-center">
                                     <div class="text-4xl mb-2">💰</div>
                                     <p class="font-semibold">Microcréditos</p>
-                                    <p class="text-xs text-gray-500">Capital de Trabajo</p>
+                                    <p class="text-xs text-[#7A7A79]">Capital de Trabajo</p>
                                 </div>
                                 <div class="text-2xl font-light text-gray-400">+</div>
                                 <div class="flex flex-col items-center">
                                     <div class="text-4xl mb-2">📉</div>
                                     <p class="font-semibold">Tasas Bajas</p>
-                                    <p class="text-xs text-gray-500">Competencia Formal</p>
+                                    <p class="text-xs text-[#7A7A79]">Competencia Formal</p>
                                 </div>
                             </div>
                         </div>
@@ -282,27 +316,32 @@
             
             <section id="seccion5" class="content-section hidden space-y-8">
                  <header>
-                    <h2 class="text-3xl font-bold text-gray-800">V. Falta de Estrategia: Un Riesgo Sistémico</h2>
+                    <!-- Actualizado: Color de encabezado -->
+                    <h2 class="text-3xl font-bold text-[#3A5B4F]">V. Falta de Estrategia: Un Riesgo Sistémico</h2>
                 </header>
-                <div class="space-y-6 text-gray-700">
+                <!-- Actualizado: Color de texto -->
+                <div class="space-y-6 text-[#3E3E3C]">
                      <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">5.1. Megaproyectos sin Visión de Largo Plazo</h3>
+                        <!-- Actualizado: Color de sub-encabezado -->
+                        <h3 class="text-xl font-semibold mb-2 text-[#3A5B4F]">5.1. Megaproyectos sin Visión de Largo Plazo</h3>
                         <p>Ejemplo: el Puerto de Chancay.</p>
                         <ul class="mt-2 pl-5 space-y-2 sub-list">
                            <li>Se construye infraestructura de clase mundial sin desarrollar la base productiva ni servicios urbanos que la sostengan.</li>
                            <li>El Estado actúa con estrategia ofensiva, pero sin invertir en la “defensa” necesaria para respaldarla.</li>
                         </ul>
-                         <div class="mt-6 bg-white p-6 rounded-lg shadow-sm border border-gray-200/80 flex flex-col items-center text-center">
-                            <h4 class="font-bold text-gray-800 mb-4">Metáfora del Megaproyecto sin Base</h4>
+                         <!-- Actualizado: Colores de tarjeta y diagrama -->
+                         <div class="mt-6 bg-[#F4F2EE] p-6 rounded-lg shadow-sm border border-gray-300/30 flex flex-col items-center text-center">
+                            <h4 class="font-bold text-[#3A5B4F] mb-4">Metáfora del Megaproyecto sin Base</h4>
                             <div class="flex flex-col items-center">
-                                <div class="w-48 h-20 bg-gray-700 text-white flex items-center justify-center rounded-t-lg font-bold">Puerto de Chancay</div>
-                                <div class="w-24 h-4 bg-gray-400 rounded-b-lg"></div>
-                                <p class="text-sm mt-2 text-red-600 italic">Base productiva y urbana insuficiente</p>
+                                <div class="w-48 h-20 bg-[#3A5B4F] text-white flex items-center justify-center rounded-t-lg font-bold">Puerto de Chancay</div>
+                                <div class="w-24 h-4 bg-[#9DB193] rounded-b-lg"></div>
+                                <p class="text-sm mt-2 text-[#3A5B4F] italic">Base productiva y urbana insuficiente</p>
                             </div>
                         </div>
                     </div>
                      <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">5.2. Agenda Estratégica Nacional</h3>
+                        <!-- Actualizado: Color de sub-encabezado -->
+                        <h3 class="text-xl font-semibold mb-2 text-[#3A5B4F]">5.2. Agenda Estratégica Nacional</h3>
                         <p>Salazar propone que la sociedad civil y la academia asuman liderazgo para impulsar un plan estratégico nacional de desarrollo independiente del ciclo político.</p>
                     </div>
                 </div>
@@ -310,34 +349,14 @@
             
             <section id="seccion6" class="content-section hidden space-y-8">
                 <header>
-                    <h2 class="text-3xl font-bold text-gray-800">VI. Conclusiones</h2>
+                    <!-- Actualizado: Color de encabezado -->
+                    <h2 class="text-3xl font-bold text-[#3A5B4F]">VI. Conclusiones</h2>
                 </header>
-                <div class="space-y-6 text-gray-700">
-                    <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">6.1. Claves para No Quebrar un Negocio</h3>
-                        <ul class="mt-4 space-y-4">
-                            <li class="flex items-start">
-                                <span class="text-2xl mr-3">🧠</span>
-                                <div><b>Claridad conceptual interna:</b> Estrategia ≠ Planeamiento.</div>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-2xl mr-3">🔗</span>
-                                <div><b>Coherencia</b> entre recursos, decisiones y objetivos.</div>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-2xl mr-3">📈</span>
-                                <div><b>Formalización</b> como estrategia de crecimiento.</div>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-2xl mr-3">💧</span>
-                                <div><b>Liquidez</b> como habilitador, no como fin.</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">6.2. Visión de Futuro</h3>
-                        <p>El éxito de Koplast muestra que la estrategia bien definida, ejecutada y revisada es la diferencia entre sobrevivir y liderar.</p>
-                        <p class="mt-2">Una economía sin estrategia nacional limita a las empresas; con estrategia, las impulsa.</p>
+                <!-- Actualizado: Color de texto -->
+                <div class="space-y-6 text-[#3E3E3C]">
+                    <!-- Actualizado: Colores de tarjeta -->
+                    <div class="bg-[#F4F2EE] p-6 rounded-lg shadow-sm border border-gray-300/30">
+                        <p class="text-lg leading-relaxed">La clave para no quebrar un negocio radica en una estrategia clara, coherente y formalizada, entendiendo que estrategia no es lo mismo que planeamiento. La alineación entre recursos, decisiones y objetivos permite sostener el crecimiento, mientras que la formalización se convierte en una ventaja competitiva y la liquidez en un medio para ejecutar la visión, no un fin. Cuando una estrategia está bien definida, ejecutada y revisada, marca la diferencia entre sobrevivir y liderar; y si bien una economía sin estrategia nacional limita a las empresas, contar con ella las impulsa a competir con mayor solidez y visión de futuro.</p>
                     </div>
                 </div>
             </section>
@@ -391,7 +410,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 datasets: [{
                     label: 'Progreso de MIPYMES',
                     data: [96.1, 3.9],
-                    backgroundColor: ['#ef4444', '#22c55e'],
+                    /* Actualizado: Colores del gráfico (Gris y Verde) */
+                    backgroundColor: ['#7A7A79', '#3A5B4F'],
                     hoverOffset: 4
                 }]
             },
